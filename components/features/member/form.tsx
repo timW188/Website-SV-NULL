@@ -24,7 +24,7 @@ const BecomeMemberForm = ({ discount }: Props) => {
           placeholder: "Kies je contributie",
           required: true,
           options: [
-            { value: "15", label: "€15 – per schooljaar (prijs vóór korting)" },
+            { value: "15", label: "€15 – per schooljaar" },
             {
               value: "40",
               label: "€40 – voor hele studie (prijs vóór korting)",
@@ -55,7 +55,7 @@ const BecomeMemberForm = ({ discount }: Props) => {
           <div className="flex items-center gap-2 text-yellow-100">
             <span className="text-xl">💡</span>
             <p className="font-medium">
-              Let op: De prijzen hieronder zijn nog zonder korting. Jouw korting{" "}
+              Let op: De prijs hieronder is nog zonder korting. Jouw korting{" "}
               <strong>({discount.amount})</strong> wordt automatisch verrekend
               in het betaalverzoek.
             </p>

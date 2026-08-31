@@ -12,7 +12,8 @@ export const DISCOUNTS: Discount[] = [
   {
     id: "NULL2026",
     name: "Introweek korting",
-    description: "5 euro korting voor nieuwe leden",
+    description:
+      "5 euro korting voor nieuwe leden die zich inschrijven voor 4 jaar lidmaatschap tijdens de introweek.",
     amount: "€5,00 korting",
     startDate: "2026-08-31",
     endDate: "2026-09-05",
