@@ -10,13 +10,13 @@ export interface Discount {
 
 export const DISCOUNTS: Discount[] = [
   {
-    id: "welcome2025",
+    id: "NULL2026",
     name: "Introweek korting",
     description: "5 euro korting voor nieuwe leden",
     amount: "€5,00 korting",
-    startDate: "2025-08-31",
-    endDate: "2025-09-05",
-    createdAt: "2025-08-31",
+    startDate: "2026-08-31",
+    endDate: "2026-09-05",
+    createdAt: "2026-08-31",
   },
 ];
 
@@ -27,9 +27,8 @@ export function generateDiscountHash(discountId: string): string {
   }
 
   const combined = `${discountId}-${salt}`;
-  const hash = Buffer.from(combined, "utf8").toString("base64url");
 
-  return hash;
+  return Buffer.from(combined, "utf8").toString("base64url");
 }
 
 export function getDiscountByHash(hash: string): Discount | null {
